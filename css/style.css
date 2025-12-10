@@ -1,0 +1,268 @@
+:root {
+  /* color */
+  --primary-clr: #D35355;
+  --secondary-clr: #EDE2D7;
+  --text-clr: #DCD1C7;
+  --accent-clr: #F9F4ED;
+  --accent-dark-clr: #D96B2F;
+  --surface-dark-clr: #1E1B1B;
+  --overlay-light-clr: #FFFFFF33;
+  --white-clr: #FFFFFF;
+  --black-clr: #000000;
+  --surface-muted-clr: #382D2D;
+  --primary-gradient-clr: linear-gradient(279.31deg, #D35355 15.06%, #D96B2F 94.44%);
+  /* font-family */
+  --font-family-p1: "Philosopher", sans-serif;
+  --font-family-p2: "DM Sans", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--surface-dark-clr);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Media & Images */
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Forms */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-inline: 30px !important;
+}
+
+/*  */
+.btn-main {
+  display: inline-block;
+  font: 500 16px/1.2 var(--font-family-p2);
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid var(--secondary-clr);
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: var(--secondary-clr);
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-main:hover {
+  background: var(--primary-gradient-clr);
+  border-color: transparent;
+}
+
+.btn-grad {
+  background: var(--primary-gradient-clr);
+  border-color: transparent;
+}
+
+.btn-grad:hover {
+  background: transparent;
+  border-color: var(--secondary-clr);
+  /* color: var(--surface-dark-clr); */
+}
+
+.btn-white {
+  background: var(--white-clr);
+  border: 2px solid var(--white-clr);
+  color: var(--surface-dark-clr);
+}
+
+.btn-white:hover {
+  color: var(--white-clr);
+}
+
+/* Header */
+.hd-top {
+  padding: 10px 0;
+  background-color: var(--surface-muted-clr);
+}
+
+.hd-top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.top-cn-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 600 12px/1.2 var(--font-family-p2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-clr);
+}
+
+
+.tor-right-cn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.top-cn-item img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.site-header .navbar-brand {
+  margin-right: 60px;
+}
+
+.site-header .navbar-brand img {
+  object-fit: contain;
+  aspect-ratio: 250/60;
+  max-width: 250px;
+}
+
+.site-header .navbar {
+  padding: 20px 0 !important;
+}
+
+.site-header .navbar ul li {}
+
+.site-header .navbar ul li a {
+  padding: 4px 15px !important;
+  margin: 0;
+  font: 500 16px/1.2 var(--font-family-p2);
+  color: var(--white-clr);
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+.site-header .navbar ul li a.active,
+.site-header .navbar ul li a:hover {
+  background: var(--primary-gradient-clr);
+  color: var(--white-clr);
+}
+
+.site-header .right-cn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/*  */
+.hero-home-wrap {
+  padding: 140px 40px 40px 92px;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-cn {
+  max-width: 636px;
+  padding: 60px 80px;
+  border-radius: 30px;
+  background: #201C1BCC;
+}
+
+.hero-cn h1 {
+  font: 400 70px/1.2 "Philosopher", serif;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.hero-cn p {
+  font: 400 17px/1.6 "DM Sans", sans-serif;
+  color: #DCD1C7;
+  margin-bottom: 60px;
+}
+
+.hero-cn .button-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-cn-two {
+  text-align: end;
+}
+
+.hero-cn-two .ratings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-cn-two .ratings i {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.hero-cn-two p {
+  font: 400 17px/1.6 "DM Sans", sans-serif;
+  color: #DCD1C7;
+  margin-bottom: 0;
+}
