@@ -176,6 +176,9 @@ figure {
   color: var(--text-clr);
 }
 
+.top-cn-item a:hover {
+  color: var(--accent-dark-clr);
+}
 
 .tor-right-cn {
   display: flex;
@@ -243,14 +246,14 @@ figure {
 }
 
 .hero-cn h1 {
-  font: 400 70px/1.2 "Philosopher", serif;
+  font: 400 70px/1.2 var(--font-family-p1);
   letter-spacing: -2px;
   color: #FFFFFF;
   margin-bottom: 40px;
 }
 
 .hero-cn p {
-  font: 400 17px/1.6 "DM Sans", sans-serif;
+  font: 400 17px/1.6 var(--font-family-p2);
   color: #DCD1C7;
   margin-bottom: 60px;
 }
@@ -279,7 +282,7 @@ figure {
 }
 
 .hero-cn-two p {
-  font: 400 17px/1.6 "DM Sans", sans-serif;
+  font: 400 17px/1.6 var(--font-family-p2);
   color: var(--secondary-clr);
   margin-bottom: 0;
 }
@@ -412,7 +415,7 @@ figure {
 }
 
 .sc-philosophy-cn p {
-  font: 400 17px/1.6 "DM Sans", sans-serif;
+  font: 400 17px/1.6 var(--font-family-p2);
   color: var(--secondary-clr);
   margin-bottom: 40px;
 }
@@ -451,4 +454,96 @@ figure {
   background: linear-gradient(279.31deg, #D35355 15.06%, #D96B2F 94.44%);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/*  */
+.sc-pricing-plans {
+  padding: 100px 0;
+  background-color: var(--surface-muted-clr);
+}
+
+.sc-pricing-plans .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  color: var(--secondary-clr);
+}
+
+.sc-pricing-plans .hd-wrap p {
+  font: 400 17px/1.6 var(--font-family-p2);
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+  text-align: end;
+}
+
+.sc-pricing-plans .hd-wrap .button-wrap {
+  text-align: end;
+}
+
+/*  */
+.sc-team {
+  padding: 100px 0;
+}
+
+.sc-team .hd-wrap {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+
+.sc-team .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  text-align: center;
+  color: var(--secondary-clr);
+}
+
+/*  */
+.sc-excellent {
+  padding: 100px 0;
+}
+
+.sc-excellent .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  color: var(--secondary-clr);
+}
+
+.sc-excellent .hd-wrap p {
+  font: 400 17px/1.6 var(--font-family-p2);
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+/*  */
+.sc-blog {
+  padding: 100px 0;
+}
+
+.sc-blog .hd-wrap {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+
+.sc-blog .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  text-align: center;
+  color: var(--secondary-clr);
+}
+/*  */
+.sc-gallry{
+  overflow: hidden;
+}
+.home-gallry-wrap{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.home-gallry-wrap img{
+aspect-ratio: 320/320;
+object-fit: cover;
+
 }
