@@ -42,6 +42,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -279,42 +282,42 @@
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#pane-1" type="button"
                   role="tab">
-                  <img src="img1.png" class="tab-icon" alt=""> Therapeutic Massage
+                  <img src="./images/tab-icon-1.svg" class="tab-icon" alt=""> Therapeutic Massage
                 </button>
               </li>
 
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#pane-2" type="button"
                   role="tab">
-                  <img src="img2.png" class="tab-icon" alt=""> Holistic Facials
+                  <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
                 </button>
               </li>
 
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#pane-3" type="button"
                   role="tab">
-                  <img src="img3.png" class="tab-icon" alt=""> Energy Healing
+                  <img src="./images/tab-icon-3.svg" class="tab-icon" alt=""> Energy Healing
                 </button>
               </li>
 
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-4" type="button"
                   role="tab">
-                  <img src="img4.png" class="tab-icon" alt=""> Sound & Vibration Therapy
+                  <img src="./images/tab-icon-4.svg" class="tab-icon" alt=""> Sound & Vibration Therapy
                 </button>
               </li>
 
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="tab-5" data-bs-toggle="pill" data-bs-target="#pane-5" type="button"
                   role="tab">
-                  <img src="img5.png" class="tab-icon" alt=""> Moon Ritual Sessions
+                  <img src="./images/tab-icon-5.svg" class="tab-icon" alt=""> Moon Ritual Sessions
                 </button>
               </li>
 
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="tab-6" data-bs-toggle="pill" data-bs-target="#pane-6" type="button"
                   role="tab">
-                  <img src="img6.png" class="tab-icon" alt=""> Meditation Coaching
+                  <img src="./images/tab-icon-6.svg" class="tab-icon" alt=""> Meditation Coaching
                 </button>
               </li>
 
@@ -326,33 +329,225 @@
             <div class="tab-content">
 
               <div class="tab-pane fade show active" id="pane-1" role="tabpanel">
-                <h2>Therapeutic Massage</h2>
-                <p>Content for Therapeutic Massage...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-1.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="pane-2" role="tabpanel">
-                <h2>Holistic Facials</h2>
-                <p>Content for Holistic Facials...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-2.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="pane-3" role="tabpanel">
-                <h2>Energy Healing</h2>
-                <p>Content for Energy Healing...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-3.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="pane-4" role="tabpanel">
-                <h2>Sound & Vibration Therapy</h2>
-                <p>Content for Sound & Vibration Therapy...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-4.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="pane-5" role="tabpanel">
-                <h2>Moon Ritual Sessions</h2>
-                <p>Content for Moon Ritual Sessions...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-5.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="pane-6" role="tabpanel">
-                <h2>Meditation Coaching</h2>
-                <p>Content for Meditation Coaching...</p>
+                <div class="pricing-tab-wrap">
+                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-6.webp);">
+                    <h3>Therapeutic Massage</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
+                      treatment unless further testing is required.</p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="costing-wrap">
+                          <h4>60 minutes session</h4>
+                          <ul>
+                            <li>
+                              <p>Swedish Relaxation Massage</p>
+                              <span>$85</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -367,22 +562,26 @@
   <!--  -->
   <section class="sc-team">
     <div class="container">
+      <!--  -->
       <div class="hd-wrap">
         <span class="sub-hd">meet our team</span>
         <h2>Empowering You Through Mindful Wellness</h2>
       </div>
+      <!--  -->
       <div class="row team-card-wrap">
         <div class="col-md-4">
           <div class="team-card">
             <h3>Angela Carbone</h3>
             <p>Soft Tissue Therapist</p>
-            <img src="" alt="">
-            <ul class="social-links d-flex gap-3 mt-3 list-unstyled">
-              <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-            <button class="btn-main">Open Profile</button>
+            <img src="./images/team-1.png" alt="Team Image">
+            <div class="d-flex align-items-center gap-2 justify-content-between">
+              <ul class="social-links">
+                <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+              <button class="btn-main">Open Profile</button>
+            </div>
           </div>
         </div>
 
@@ -390,13 +589,15 @@
           <div class="team-card">
             <h3>Mason Goodman</h3>
             <p>Reflexology Therapist</p>
-            <img src="" alt="">
-            <ul class="social-links d-flex gap-3 mt-3 list-unstyled">
-              <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-            <button class="btn-main">Open Profile</button>
+            <img src="./images/team-2.png" alt="Team Image">
+            <div class="d-flex align-items-center gap-2 justify-content-between">
+              <ul class="social-links">
+                <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+              <button class="btn-main">Open Profile</button>
+            </div>
           </div>
         </div>
 
@@ -404,18 +605,153 @@
           <div class="team-card">
             <h3>Whitney Pratt</h3>
             <p>Massage Therapist</p>
-            <img src="" alt="">
-            <ul class="social-links d-flex gap-3 mt-3 list-unstyled">
-              <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-            <button class="btn-main">Open Profile</button>
+            <img src="./images/team-3.png" alt="Team Image">
+            <div class="d-flex align-items-center gap-2 justify-content-between">
+              <ul class="social-links">
+                <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+              <button class="btn-main">Open Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="button-wrap">
+        <button class="btn-main btn-grad">Meet the Team</button>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="sc-reviews">
+    <div class="container">
+      <div class="hd-wrap">
+        <h2>Real People. Real Results</h2>
+        <a href="" class="btn-main">More Reviews</a>
+      </div>
+    </div>
+    <div class="swiper myreviews">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-1.png" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“From the moment I walked in, I felt held and seen. The healing work here is incredibly intuitive and
+              soulful.”</p>
+            <h3>Cassy on Holistic Facial</h3>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-2.png" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“This space is pure magic. The warmth, professionalism, and spiritual guidance offered are unmatched.”
+            </p>
+            <h3>Amanda & Lily on Moon Ritual Session</h3>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-3.png" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“Every session feels like a reset for my mind, body, and spirit. The healing is deep, and the care is
+              genuine.”</p>
+            <h3>Noah on Deep Tissue Massage</h3>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-4.webp" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“We didn’t know what to expect, but the experience exceeded all expectations. Gentle, grounding, and
+              deeply healing.”</p>
+            <h3>Group Experience on Blissful Ritual</h3>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-5.webp" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“We didn’t know what to expect, but the experience exceeded all expectations. Gentle, grounding, and
+              deeply healing.”</p>
+            <h3>Group Experience on Blissful Ritual</h3>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide myreviews-card">
+          <div class="myreviews-card-img">
+            <img src="./images/review-6.webp" alt="">
+          </div>
+          <div class="myreviews-card-content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>“We didn’t know what to expect, but the experience exceeded all expectations. Gentle, grounding, and
+              deeply healing.”</p>
+            <h3>Group Experience on Blissful Ritual</h3>
           </div>
         </div>
       </div>
 
+      <div class="swiper-pagination"></div>
     </div>
+
   </section>
   <!--  -->
   <section class="sc-excellent">
@@ -434,6 +770,106 @@
           </div>
         </div>
       </div>
+      <!--  -->
+      <div class="video-container">
+        <video id="my-video" controls poster="./images/video-cover.webp" preload="none">
+          <source src="your-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img src="./images/video-cover.webp" class="cover-image" alt="Video Cover Image" id="cover-image">
+        <button class="play-button" id="play-button">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="sc-faq" style="background-image: url(./images/background-dark.webp);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="hd-wrap">
+            <span class="sub-hd">Got a Question?</span>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion spa-accordion" id="faqAccordion">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                  What services do you offer?
+                </button>
+              </h2>
+              <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer a range of relaxing and rejuvenating treatments, including massages, facials,
+                  body scrubs, aromatherapy, and holistic wellness rituals. You can explore our full menu.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                  How do I book a treatment?
+                </button>
+              </h2>
+              <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can book your treatment online, by phone, or by visiting our wellness center.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+                  What should I expect during my first visit?
+                </button>
+              </h2>
+              <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  During your first visit, our staff will help you complete a brief intake form and discuss
+                  your preferences to ensure a personalized and relaxing experience.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+                  What is your cancellation policy?
+                </button>
+              </h2>
+              <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We kindly ask for at least 24 hours’ notice for cancellations or rescheduling to avoid charges.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5">
+                  Should I arrive early for my appointment?
+                </button>
+              </h2>
+              <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We recommend arriving 10–15 minutes early to relax, complete any necessary paperwork,
+                  and begin your treatment feeling calm and unhurried.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!--  -->
@@ -443,8 +879,72 @@
         <span class="sub-hd">wellness blog</span>
         <h2>Get Inspired – Explore Wellness Stories, Tips, and Soulful Reflections.</h2>
       </div>
+      <!--  -->
+      <div class="row">
+        <!--  -->
+        <div class="col-lg-4">
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="./images/blog-1.png" alt="Blog-img">
+            </div>
+            <div class="blog-card-cn">
+              <span class="blg-badge">wellness</span>
+              <h3>5 Ways Regular Massage Therapy Can Improve Your Overall Wellbeing</h3>
+              <button class="btn-main">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-lg-4">
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="./images/blog-2.png" alt="Blog-img">
+            </div>
+            <div class="blog-card-cn">
+              <span class="blg-badge">Holistic Healing</span>
+              <h3>The Healing Power of Sound: How Sound Therapy Restores Inner Balance</h3>
+              <button class="btn-main">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-lg-4">
+          <div class="blog-card">
+            <div class="blog-card-img">
+              <img src="./images/blog-3.png" alt="Blog-img">
+            </div>
+            <div class="blog-card-cn">
+              <span class="blg-badge">Mindfulness & Meditation</span>
+              <h3>Guided Meditation for Deep Relaxation: A Path to Mental Clarity and Calm</h3>
+              <button class="btn-main">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="button-wrap">
+        <button class="btn-main btn-grad">Meet the Team</button>
+      </div>
     </div>
   </section>
+  <!--  -->
+  <section class="sc-contact-form">
+    <div class="container">
+      <div class="sc-contact-form-wrap">
+        <div class="sc-contact-form-img">
+          <img src="./images/contact-img.jpg" alt="contact-form-img">
+        </div>
+        <div class="sc-contact-form-cn">
+          <figure>
+            <img src="./images/small-rotate-star.svg" alt="">
+          </figure>
+          <h2>Book an Appointment</h2>
+          <p>Your life is waiting. Fast, long-lasting relief is nearby.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
   <section class="sc-gallry">
     <div class="home-gallry-wrap">
       <img src="./images/gallery-1.webp" alt="gallry-img">
@@ -457,12 +957,86 @@
   </section>
   <!-- Content End -->
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" style="background-image: url(./images/background-dark.webp);">
+    <div class="container">
 
+      <div class="row ft-top">
+        <div class="col-lg-7">
+          <div class="hd-wrap">
+            <h2>Get a special 50% new client discount and unleash your health.</h2>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="form-wrap">
+            <span>Sign up to Newsletter</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ft-middle">
+        <div class="col-lg-4">
+          <div class="site-logo">
+            <img src="./images/logo.svg" alt="Spaxwellness logo">
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="second-col">
+            <h3>Address</h3>
+            <address>
+              511 SW 10th Ave 1206, Portland, OR, United States
+            </address>
+            <a href="#">View Directions</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="third-col">
+            <h3>Work Hours</h3>
+            <ul class="working-hr">
+              <li>Monday to Friday: 9AM - 6PM</li>
+              <li>Saturday: 9AM - 6PM</li>
+              <li>Sunday: 9AM - 5PM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="fourth-col">
+            <h3>Contacts</h3>
+            <div class="ft-cn-item">
+              <a href="mailto:example@wellness-bliss.com">
+                <img src="./images/email-icon.svg" alt="email icon">
+                example@wellness-bliss.com
+              </a>
+            </div>
+            <div class="ft-cn-item">
+              <a href="tel:18001231234">
+                <img src="./images/phone-icon.svg" alt="phone icon">
+                1-800-123-1234
+              </a>
+            </div>
+            <ul class="social-links">
+              <li><a href="#" class="text-light"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ft-btm">
+        <p>Spaxwellness © 2025 - All Rights Reserved</p>
+      </div>
+
+    </div>
   </footer>
+
   <!-- Bootstrap JS Bundle (with Popper) -->
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
