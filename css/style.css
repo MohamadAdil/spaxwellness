@@ -287,6 +287,19 @@ figure {
   margin-bottom: 0;
 }
 
+.inner-hero .hero-home-wrap {
+  padding: 100px 40px;
+}
+
+.inner-hero .hero-cn {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.inner-hero .hero-cn p {
+  margin: 0;
+}
+
 /*  */
 .sc-features {
   padding: 100px 0;
@@ -1127,6 +1140,7 @@ figure {
   font-size: 15px;
   line-height: 1.2;
   color: var(--secondary-clr);
+  width: 100%;
 }
 
 .booking-form input::placeholder,
@@ -1343,4 +1357,139 @@ figure {
   font: 300 15px/1.2 var(--font-family-p2);
   color: var(--text-clr);
   text-align: center;
+}
+
+/*  */
+.abt-sc {
+  padding: 100px 0;
+
+}
+
+.abt-sc .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  color: var(--secondary-clr);
+  margin-bottom: 30px;
+}
+
+.abt-sc .hd-wrap p {
+  font: 400 17px/1.6 var(--font-family-p2);
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+}
+
+.abt-sc .row {
+  align-items: center;
+}
+
+.abt-sc-img img {
+  border-radius: 20px;
+  aspect-ratio: 700/550;
+  object-fit: cover;
+}
+
+.abt-row-1 {
+  margin-bottom: 40px;
+}
+
+.abt-row-2 figure img {
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+}
+
+.abt-row-2 .abt-sc-img img {
+  aspect-ratio: 550/700;
+}
+
+.abt-row-1 .hd-wrap {
+  padding-left: 100px;
+}
+
+.abt-row-2 .hd-wrap {
+  padding-right: 100px;
+}
+
+/*  */
+.faq-pg {
+  padding: 100px 0;
+}
+
+/*  */
+.cnt-sc {
+  padding: 100px 0;
+
+}
+
+.cnt-sc .hd-wrap h2 {
+  font: 400 54px/60px var(--font-family-p1);
+  letter-spacing: -2px;
+  color: var(--secondary-clr);
+  margin-bottom: 30px;
+}
+
+.cnt-sc .hd-wrap p {
+  font: 400 17px/1.6 var(--font-family-p2);
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+}
+
+.cnt-sc .row {
+  align-items: center;
+}
+
+.cnt-sc-img img {
+  border-radius: 20px;
+  aspect-ratio: 700/550;
+  object-fit: cover;
+}
+
+.cnt-row-1 {
+  margin-bottom: 40px;
+}
+
+.cnt-row-2 figure img {
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+}
+
+.cnt-row-2 .cnt-sc-img img {
+  aspect-ratio: 550/700;
+}
+
+.cnt-row-1 .hd-wrap {
+  padding-right: 100px;
+}
+
+.cnt-row-2 .hd-wrap {
+  padding-left: 100px;
+}
+
+.info-section {
+  display: flex;
+  gap: 60px;
+}
+
+.info-box h4 {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--accent-dark-clr);
+}
+
+.info-box p {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 17px;
+  leading-trim: NONE;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #DCD1C7;
+
 }
