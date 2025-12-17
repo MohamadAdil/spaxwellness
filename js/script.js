@@ -155,3 +155,17 @@ jQuery(document).ready(function ($) {
         .addClass('fa-bars');
     });
 });
+// 
+(function () {
+  if (typeof Fancybox === "undefined") return;
+
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    animated: true,
+    dragToClose: true,
+    showClass: "f-fadeIn",
+    hideClass: "f-fadeOut",
+    Toolbar: {
+      display: ["zoom", "close"]
+    }
+  });
+})();

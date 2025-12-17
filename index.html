@@ -44,7 +44,8 @@
 
   <!-- swiper -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-
+  <!-- fancyapps -->
+  <link rel="stylesheet" href="./css/fancybox.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -364,287 +365,400 @@
         </div>
       </div>
       <div class="pricing-tabs-wrapper">
+        <!--  -->
         <div class="row">
-
-          <!-- LEFT SIDE TABS -->
+          <!-- LEFT SIDE TABS (Desktop) -->
           <div class="col-md-4">
-            <ul class="nav flex-column nav-pills pricing-tabs" id="pricingTab" role="tablist">
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#pane-1" type="button"
-                  role="tab">
+            <ul class="nav flex-column nav-pills d-none d-md-flex pricing-tabs" id="pricingTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane-1" type="button" role="tab">
                   <img src="./images/tab-icon-1.svg" class="tab-icon" alt=""> Therapeutic Massage
                 </button>
               </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#pane-2" type="button"
-                  role="tab">
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-2" type="button" role="tab">
                   <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
                 </button>
               </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#pane-3" type="button"
-                  role="tab">
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-3" type="button" role="tab">
                   <img src="./images/tab-icon-3.svg" class="tab-icon" alt=""> Energy Healing
                 </button>
               </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-4" type="button"
-                  role="tab">
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-4" type="button" role="tab">
                   <img src="./images/tab-icon-4.svg" class="tab-icon" alt=""> Sound & Vibration Therapy
                 </button>
               </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-5" data-bs-toggle="pill" data-bs-target="#pane-5" type="button"
-                  role="tab">
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-5" type="button" role="tab">
                   <img src="./images/tab-icon-5.svg" class="tab-icon" alt=""> Moon Ritual Sessions
                 </button>
               </li>
-
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-6" data-bs-toggle="pill" data-bs-target="#pane-6" type="button"
-                  role="tab">
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-6" type="button" role="tab">
                   <img src="./images/tab-icon-6.svg" class="tab-icon" alt=""> Meditation Coaching
                 </button>
               </li>
-
             </ul>
           </div>
 
           <!-- RIGHT SIDE TAB CONTENT -->
           <div class="col-md-8">
-            <div class="tab-content">
+            <div class="tab-content" id="pricingTabContent">
 
+              <!-- TAB 1 -->
               <div class="tab-pane fade show active" id="pane-1" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-1.webp);">
+                <!-- Mobile Accordion -->
+                <div class="accordion d-md-none" id="accordionPricing">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                        <img src="./images/tab-icon-1.svg" class="tab-icon" alt=""> Therapeutic Massage
+                      </button>
+                    </h2>
+                    <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                      data-bs-parent="#accordionPricing">
+                      <div class="accordion-body">
+                        <div class="pricing-tab-wrap">
+                          <div class="pricing-tab-img" style="background-image:url(./images/tab-img-1.webp);">
+                            <h3>Therapeutic Massage</h3>
+                            <a href="#" class="btn-main">View Details</a>
+                          </div>
+                          <div class="pricing-tab-content">
+                            <p>We offer simple, flat rate pricing for all our services. All initial consultations
+                              include treatment unless further testing is required.</p>
+                            <div class="service-time-tab">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">40 minutes session</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">60 minutes session</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">90 minutes session</button>
+                                </li>
+
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                  aria-labelledby="home-tab" tabindex="0">
+                                  <div class="costing-wrap">
+                                    <ul>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                  aria-labelledby="profile-tab" tabindex="0">
+                                  <div class="costing-wrap">
+                                    <ul>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                  aria-labelledby="contact-tab" tabindex="0">
+                                  <div class="costing-wrap">
+                                    <ul>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                      <li>
+                                        <p>Swedish Relaxation Massage</p>
+                                        <span>$85</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Desktop Tab Content -->
+                <div class="pricing-tab-wrap d-none d-md-block">
+                  <div class="pricing-tab-img" style="background-image:url(./images/tab-img-1.webp);">
                     <h3>Therapeutic Massage</h3>
                     <a href="#" class="btn-main">View Details</a>
                   </div>
                   <div class="pricing-tab-content">
                     <p>We offer simple, flat rate pricing for all our services. All initial consultations include
                       treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
+                    <div class="service-time-tab">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">40 minutes session</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">60 minutes session</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">90 minutes session</button>
+                        </li>
+
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                          aria-labelledby="home-tab" tabindex="0">
+                          <div class="costing-wrap">
+                            <ul>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                          tabindex="0">
+                          <div class="costing-wrap">
+                            <ul>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                          tabindex="0">
+                          <div class="costing-wrap">
+                            <ul>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                              <li>
+                                <p>Swedish Relaxation Massage</p>
+                                <span>$85</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <!-- TAB 2 -->
               <div class="tab-pane fade" id="pane-2" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-2.webp);">
-                    <h3>Holistic Facials</h3>
-                    <a href="#" class="btn-main">View Details</a>
-                  </div>
-                  <div class="pricing-tab-content">
-                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
-                      treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
+                <div class="accordion d-md-none" id="accordionPricing">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                        <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
+                      </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                      data-bs-parent="#accordionPricing">
+                      <div class="accordion-body">
+                        <div class="pricing-tab-wrap">
+                          <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                            <h3>Holistic Facials</h3>
+                            <a href="#" class="btn-main">View Details</a>
+                          </div>
+                          <div class="pricing-tab-content">
+                            <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="pricing-tab-wrap d-none d-md-block">
+                  <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                    <h3>Holistic Facials</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                  </div>
+                </div>
               </div>
-
+              <!-- TAB 3 -->
               <div class="tab-pane fade" id="pane-3" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-3.webp);">
+                <div class="accordion d-md-none" id="accordionPricing">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                        <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
+                      </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                      data-bs-parent="#accordionPricing">
+                      <div class="accordion-body">
+                        <div class="pricing-tab-wrap">
+                          <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                            <h3>Holistic Facials</h3>
+                            <a href="#" class="btn-main">View Details</a>
+                          </div>
+                          <div class="pricing-tab-content">
+                            <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-tab-wrap d-none d-md-block">
+                  <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
                     <h3>Holistic Facials</h3>
                     <a href="#" class="btn-main">View Details</a>
                   </div>
                   <div class="pricing-tab-content">
-                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
-                      treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
                   </div>
                 </div>
               </div>
-
+              <!-- TAB 4 -->
               <div class="tab-pane fade" id="pane-4" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-4.webp);">
-                    <h3>Sound & Vibration Therapy</h3>
-                    <a href="#" class="btn-main">View Details</a>
-                  </div>
-                  <div class="pricing-tab-content">
-                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
-                      treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
+                <div class="accordion d-md-none" id="accordionPricing">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                        <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
+                      </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                      data-bs-parent="#accordionPricing">
+                      <div class="accordion-body">
+                        <div class="pricing-tab-wrap">
+                          <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                            <h3>Holistic Facials</h3>
+                            <a href="#" class="btn-main">View Details</a>
+                          </div>
+                          <div class="pricing-tab-content">
+                            <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="pricing-tab-wrap d-none d-md-block">
+                  <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                    <h3>Holistic Facials</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                  </div>
+                </div>
               </div>
-
+              <!-- TAB 5 -->
               <div class="tab-pane fade" id="pane-5" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-5.webp);">
-                    <h3>Sound & Vibration Therapy</h3>
-                    <a href="#" class="btn-main">View Details</a>
-                  </div>
-                  <div class="pricing-tab-content">
-                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
-                      treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
+                <div class="accordion d-md-none" id="accordionPricing">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                        <img src="./images/tab-icon-2.svg" class="tab-icon" alt=""> Holistic Facials
+                      </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                      data-bs-parent="#accordionPricing">
+                      <div class="accordion-body">
+                        <div class="pricing-tab-wrap">
+                          <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                            <h3>Holistic Facials</h3>
+                            <a href="#" class="btn-main">View Details</a>
+                          </div>
+                          <div class="pricing-tab-content">
+                            <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="pricing-tab-wrap d-none d-md-block">
+                  <div class="pricing-tab-img" style="background-image:url(./images/tab-img-2.webp);">
+                    <h3>Holistic Facials</h3>
+                    <a href="#" class="btn-main">View Details</a>
+                  </div>
+                  <div class="pricing-tab-content">
+                    <p>Holistic facial treatments designed to nourish and rejuvenate your skin naturally.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="pane-6" role="tabpanel">
-                <div class="pricing-tab-wrap">
-                  <div class="pricing-tab-img" style="background-image: url(./images/tab-img-6.webp);">
-                    <h3>Meditation Coaching</h3>
-                    <a href="#" class="btn-main">View Details</a>
-                  </div>
-                  <div class="pricing-tab-content">
-                    <p>We offer simple, flat rate pricing for all our services. All initial consultations include
-                      treatment unless further testing is required.</p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="costing-wrap">
-                          <h4>60 minutes session</h4>
-                          <ul>
-                            <li>
-                              <p>Swedish Relaxation Massage</p>
-                              <span>$85</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
   </section>
@@ -1082,14 +1196,32 @@
   <!--  -->
   <section class="sc-gallry">
     <div class="home-gallry-wrap">
-      <img src="./images/gallery-1.webp" alt="gallry-img">
-      <img src="./images/gallery-2.webp" alt="gallry-img">
-      <img src="./images/gallery-3.webp" alt="gallry-img">
-      <img src="./images/gallery-4.webp" alt="gallry-img">
-      <img src="./images/gallery-5.webp" alt="gallry-img">
-      <img src="./images/gallery-6.webp" alt="gallry-img">
+      <a href="./images/gallery-1.webp" data-fancybox="gallery">
+        <img src="./images/gallery-1.webp" alt="gallery-img">
+      </a>
+
+      <a href="./images/gallery-2.webp" data-fancybox="gallery">
+        <img src="./images/gallery-2.webp" alt="gallery-img">
+      </a>
+
+      <a href="./images/gallery-3.webp" data-fancybox="gallery">
+        <img src="./images/gallery-3.webp" alt="gallery-img">
+      </a>
+
+      <a href="./images/gallery-4.webp" data-fancybox="gallery">
+        <img src="./images/gallery-4.webp" alt="gallery-img">
+      </a>
+
+      <a href="./images/gallery-5.webp" data-fancybox="gallery">
+        <img src="./images/gallery-5.webp" alt="gallery-img">
+      </a>
+
+      <a href="./images/gallery-6.webp" data-fancybox="gallery">
+        <img src="./images/gallery-6.webp" alt="gallery-img">
+      </a>
     </div>
   </section>
+
   <!-- Content End -->
   <!-- Footer -->
   <footer class="site-footer" style="background-image: url(./images/background-dark.webp);">
@@ -1173,6 +1305,8 @@
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <!-- Swiper JS -->
+  <!--  -->
+  <script src="./js/fancybox.umd.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
