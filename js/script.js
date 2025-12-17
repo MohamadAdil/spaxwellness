@@ -55,6 +55,7 @@ const swiper = new Swiper(".myreviews", {
   breakpoints: {
     768: { slidesPerView: 2 },
     1024: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 },
     1400: { slidesPerView: 4.5 }
   },
 
@@ -99,7 +100,7 @@ const pkgSwiper = new Swiper(".pkg-slider", {
     1200: { slidesPerView: 4 },
     992: { slidesPerView: 3 },
     768: { slidesPerView: 2 },
-    480: { slidesPerView: 1.2 },
+    480: { slidesPerView: 1 },
     0: { slidesPerView: 1 }
   },
   pagination: {
@@ -140,3 +141,17 @@ jQuery(function () {
   });
 });
 
+// 
+jQuery(document).ready(function ($) {
+  $('#navbarsExample04')
+    .on('show.bs.collapse', function () {
+      $('.navbar-toggler i')
+        .removeClass('fa-bars')
+        .addClass('fa-xmark');
+    })
+    .on('hide.bs.collapse', function () {
+      $('.navbar-toggler i')
+        .removeClass('fa-xmark')
+        .addClass('fa-bars');
+    });
+});
