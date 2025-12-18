@@ -206,7 +206,9 @@ figure {
   padding: 20px 0 !important;
 }
 
-.site-header .navbar ul li {}
+.site-header .navbar ul li {
+  position: relative;
+}
 
 .site-header .navbar ul li a {
   padding: 4px 15px !important;
@@ -224,6 +226,93 @@ figure {
   color: var(--white-clr);
 }
 
+/*  */
+
+/* SUB MENU BASE */
+.site-header ul li .sub-menu {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  min-width: 260px;
+  background: #382d2d;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* SHOW SUB MENU */
+.site-header ul li:hover>.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* SUB MENU LINKS */
+.site-header ul li .sub-menu li a {
+  padding: 10px 20px 10px 15px !important;
+  font: 400 16px/1.4 var(--font-family-p2);
+  color: var(--white-clr);
+  border-radius: 0;
+  background: unset !important;
+  transition: background 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
+  display: block;
+  border-bottom: 1px solid var(--overlay-light-clr);
+}
+
+/* SUB MENU HOVER */
+.site-header ul li .sub-menu li a:hover {
+  padding-left: 26px;
+  background: unset !important;
+  color: var(--primary-clr);
+}
+
+/* THIRD LEVEL MENU */
+.site-header ul li .sub-menu li {
+  position: relative;
+}
+
+.site-header ul li .sub-menu li .sub-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 20px;
+  transform: translateX(10px);
+}
+
+/* THIRD LEVEL SHOW */
+.site-header ul li .sub-menu li:hover>.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* DROPDOWN ICONS */
+.site-header ul li.menu-item-has-children>a::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 12px;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.site-header ul li .sub-menu li.menu-item-has-children>a::after {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/*  */
 .site-header .right-cn {
   display: flex;
   align-items: center;
@@ -876,10 +965,14 @@ figure {
 
 .team-card img {
   aspect-ratio: 347/315;
-  margin: 30px 0;
+  margin: 30px 0 0;
   border-radius: 15px;
   object-fit: cover;
   object-position: top;
+}
+
+.team-card>div {
+  display: none !important;
 }
 
 .team-card-wrap>div {
@@ -910,7 +1003,7 @@ figure {
 
 .sc-team .button-wrap {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 /*  */
@@ -1075,7 +1168,7 @@ figure {
   border: 1px solid var(--overlay-light-clr);
   border-width: 1px 0;
   border-radius: 0;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .spa-accordion .accordion-item:first-child {
@@ -1097,7 +1190,7 @@ figure {
 /* Accordion Body */
 .spa-accordion .accordion-body,
 .spa-accordion .accordion-body p {
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   font: 400 17px/26px var(--font-family-p2);
   color: var(--text-clr);
 }
@@ -1139,7 +1232,7 @@ figure {
 
 .sc-blog .button-wrap {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .blog-card {
@@ -1657,14 +1750,16 @@ figure {
 .gd-gal {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 500px;
+  grid-auto-rows: 420px;
   gap: 26px;
-  grid-template-areas: "a a b c"
+  grid-template-areas:
+    "a a b c"
     "d e f f"
-    "g g g g "
-    "h h i j ";
+    "g g g g"
+    "h h i j";
 }
 
+/* Grid areas */
 .item-a {
   grid-area: a;
 }
@@ -1705,13 +1800,39 @@ figure {
   grid-area: j;
 }
 
-.gd-gal-item img {
+.gd-gal-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.gd-gal-item img,
+.gd-gal-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 24px;
   display: block;
 }
+
+.gd-gal-item video {
+  aspect-ratio: 16/9;
+}
+
+/* Video play icon using Font Awesome */
+.gd-gal-item.video::after {
+  content: "\f144";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 70px;
+  color: var(--white-clr);
+  background: rgba(0, 0, 0, .35);
+  pointer-events: none;
+}
+
 
 /* ================= PRICING CARDS ================= */
 .sc-pricing-card {
@@ -1757,7 +1878,7 @@ figure {
   display: inline-flex;
   background: var(--white-clr);
   border-radius: 30px;
-  padding: 2px 8px;
+  padding: 5px 12px;
   font: 600 12px/1.2 "DM Sans";
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -1835,6 +1956,7 @@ figure {
   border-radius: 12px;
   overflow: hidden;
   font-family: var(--font-family-p2);
+  height: 100%;
 }
 
 /* HEADER */
@@ -1889,6 +2011,7 @@ figure {
   text-align: start;
   color: var(--text-clr);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* Hover */
@@ -2094,4 +2217,197 @@ ul.service-dt-list li a {
 
 ul.service-dt-list li a:hover {
   color: var(--primary-clr);
+}
+
+/*  */
+.forminator-custom-form {
+  margin: 0 !important;
+}
+
+.forminator-custom-form label {
+  display: none !important;
+}
+
+.forminator-ui.forminator-custom-form[data-design=default] .forminator-input-with-icon [class*=forminator-icon-] {
+  color: var(--white-clr);
+  right: 20px;
+  left: auto !important;
+}
+
+.forminator-custom-form input,
+.forminator-custom-form select,
+.forminator-custom-form textarea,
+.forminator-custom-form span.select2-selection.select2-selection--single {
+  background: transparent !important;
+  border: 1px solid var(--overlay-light-clr) !important;
+  border-radius: 50px !important;
+  padding: 14px 20px !important;
+  font-family: var(--font-family-p2) !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  color: var(--secondary-clr) !important;
+  width: 100% !important;
+}
+
+.forminator-custom-form .forminator-button {
+  display: inline-block !important;
+  font: 500 16px/1.2 var(--font-family-p2) !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  background: var(--primary-gradient-clr) !important;
+  border-color: transparent !important;
+  padding: 15px 30px !important;
+  border-radius: 30px !important;
+  color: var(--secondary-clr) !important;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+  width: 100% !important;
+}
+
+/* Styling for the select2 input field (single selection) */
+.forminator-custom-form span.select2-selection.select2-selection--single {
+  background: transparent !important;
+  border: 1px solid var(--overlay-light-clr) !important;
+  border-radius: 50px !important;
+  /* Rounded corners */
+  padding: 14px 20px !important;
+  font-family: var(--font-family-p2) !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  color: var(--secondary-clr) !important;
+  width: 100% !important;
+  height: auto !important;
+  box-shadow: none !important;
+  /* No shadow */
+  outline: none !important;
+  /* No outline */
+}
+
+/* Styling for the rendered text inside the select dropdown */
+.forminator-custom-form .select2-selection__rendered {
+  padding: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  color: var(--secondary-clr) !important;
+}
+
+/* Styling for the dropdown arrow */
+.forminator-custom-form .select2-selection__arrow {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.forminator-custom-form .forminator-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 20px 0 0 !important;
+}
+
+.forminator-custom-form .forminator-row>div {
+  padding: 0 !important;
+}
+
+.forminator-custom-form .forminator-row .forminator-row {
+  margin: 0 !important;
+}
+
+/* Custom styling for the select dropdown container */
+.forminator-select-dropdown {
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: 0 !important;
+  border: 1px solid var(--overlay-light-clr) !important;
+  border-radius: 10px !important;
+  /* Consistent rounded corners */
+  overflow: hidden;
+}
+
+/* Styling for each option in the dropdown */
+.select2-results__options li {
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  border: 0 !important;
+  background: #382d2d !important;
+}
+
+/* Hover state for the dropdown options */
+.select2-results__options li:hover {
+  color: var(--primary-clr) !important;
+  /* Visible hover color */
+}
+
+/* Styling for selected or highlighted options */
+.select2-results__options li.select2-results__option--selected,
+.select2-results__options li.select2-results__option--highlighted {
+  color: var(--white-clr) !important;
+  /* background-color: var(--primary-clr) !important; /* Highlight background for selected option */
+  */ border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0;
+}
+
+/* Removing border and outline from the results container */
+.select2-results {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+/* Custom styling for the dropdown icon (chevron down) */
+.forminator-icon-chevron-down {
+  color: var(--white-clr) !important;
+}
+
+#forminator-module-886 .forminator-field-email {
+  width: 100% !important;
+  /* max-width:70% */
+  padding-right: 130px !important;
+}
+
+#forminator-module-886 .forminator-row {
+  margin: 0 !important;
+}
+
+#forminator-module-886 {
+  position: relative;
+}
+
+#forminator-module-886 .forminator-row.forminator-row-last {
+  /* margin-top:10px !important; */
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+#forminator-module-886 .forminator-error-message {
+  padding: 0 !important;
+  background: unset !important;
+  color: var(--primary-clr) !important;
+}
+
+/*  */
+.error-404.not-found {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.error-404.not-found h1 {
+  font: 400 54px/1.2 var(--font-family-p1);
+  letter-spacing: -2px;
+  text-align: center;
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+}
+
+.error-404.not-found p {
+  font: 400 17px/1.6 var(--font-family-p2);
+  color: var(--secondary-clr);
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
 }
